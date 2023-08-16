@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap2_3</title>
+</head>
+<body>
+<script>
+    let a = [
+        [1, 2, "a", 24],
+        [8, 11, 9, 4],
+        [7, "d", 7, 27],
+        [7, 4, "f", 14],
+        [3, "j", "k", 7]
+    ];
+    //  let tong=0
+    // for (let i = 0; i < a.length; i++) {
+    //     countchar = 0;
+    //     console.log(`Số kí tư trong hàng ${i} là: `)
+    //     for (let j = 0; j < a[i].length; j++) {
+    //         countchar++;
+    //     }console.log(countchar);
+    //     tong+=countchar;
+    // }console.log(`Tổng số kí tự có trong hàm trên là ${tong}`)
+let count=0;
+    for (let i = 0; i <a.length ; i++) {
+        for (let j = 0; j < a[i].length; j++) {
+            if(isNaN(a[i][j])===false){
+                count++;}
+
+        }
+
+    }alert("So ki tu so trong mang la :"+ count)
+
+</script>
+</body>
+</html>

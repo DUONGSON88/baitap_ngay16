@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demSoTuTrongChuoi</title>
+</head>
+<body>
+<script>
+    let input = prompt("Input:")
+    if (input === "") {
+        alert("Bạn hãy nhập vào input!!!");
+    }else if(input[0]===" " || input[input.length-1]===" ") {
+        alert("Vui lòng không nhập dấu cách vào đầu dòng hoặc cuối dòng!!!");
+    }else {
+        let countchar = 0;
+        let countword = 1;
+        for (let i = 0; i < input.length; i++) {
+            countchar++;
+            if (input[i] === " ") {
+                countword++;
+            }
+        }alert(`Số kí tự trong chuỗi input là ${countchar} kí tự và số từ là ${countword} từ `)
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>timramaxvavitri</title>
+</head>
+<body>
+<script>
+  let arr=[
+          [12,3,14],
+          [11,5,15],
+          [5,6,19],
+  ]
+  let max=arr[0][0];
+  let indexmax="";
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j <arr[i].length ; j++) {
+      if(arr[i][j]>max){
+        max=arr[i][j];
+        indexmax=`hang${i} cot ${j}`
+
+      }
+
+    }
+
+  }console.log(`Phan tu co gia tri lon nhat la ${max} nam o vi tri ${indexmax}`)
+</script>
+</body>
+</html>
